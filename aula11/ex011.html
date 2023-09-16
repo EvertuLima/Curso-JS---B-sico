@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    Qual sua nacionalidade: <input type="text" name="txtna" id="txtna">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function verificar(){
+            let txtn = window.document.getElementById('txtna')
+            let resposta = window.document.getElementById('res')
+            let nacionalidade = txtn.value
+            
+            if(nacionalidade == 'BR'){
+                resposta.innerHTML = 'Você é brasileiro!'
+            }else{
+                resposta.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>

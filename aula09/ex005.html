@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: rgb(15, 77, 77);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo sobre o DOM</h1>
+    <p>Esse é o texto de exemplo</p>
+    <p>Este é o <strong>DOM</strong> em JS</p>
+    <div id= msg>clica aqui</div>
+
+    <script>
+        //var p1 = window.document.getElementsByTagName('p')[1]
+        //var d = window.document.getElementById('msg')
+        var c = window.document.getElementsByTagName('p')[1]
+        var d = window.document.querySelector('div#msg')
+        
+        d.style.backgroundColor = 'green';
+        d.innerHTML = 'Texto foi substituido'
+        window.document.getElementById('msg').innerHTML = 'Texto substituido de novo'
+        //window.document.write(window.document.URL)
+        window.document.write('Esses é os paragrafo [1]'+c.innerHTML)
+    </script>
+</body>
+</html>
